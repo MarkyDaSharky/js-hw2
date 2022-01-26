@@ -22,6 +22,7 @@ class Person{
         };
     // Create another method for the addAge method
     addAge = function addAge(amount){
+        console.log(`adding ${amount} to ${this.name}'s age.`)
         this.age += amount
         };
 }
@@ -45,6 +46,7 @@ and replaces it with the string "even index" */
 
 function replaceEvens(arr){
     for(let i=0; i < arr.length; i++){
+        console.log(i);
         if(arr[i] %2 === 0  ){
             arr.splice(i, 'even index')
         }
